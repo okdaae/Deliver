@@ -8,47 +8,57 @@
     <!--Gogle font-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <!--Style-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
     <!--Header-->
-    <header class="container">
-        <div class="wrapper">
-            <div class="navbar">
-                <!--logo-->
-                <div class="navbar__logo">
-                <img src="./images/logo.png" alt="logo">  
-                <p>deliver</p>
-                </div>
-                <!--links-->
-                <ul class="navbar__links">
-                    <li class="navbar__link">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="navbar__link">
-                        <a href="#">Services</a>
-                    </li>
-                    <li class="navbar__link">
-                        <a href="#">Pricing</a>
-                    </li>
-                    <li class="navbar__link">
-                        <a href="#">FAQ</a>
-                    </li>
-                    <li class="navbar__link">
-                        <a href="#">Contact us </a>
-                    </li>
-                </ul>
-                 <!--icon-->
-            <div class="navbar__ham">
+    <header>
+        <header class="container">
+          <div class="wrapper">
+            <nav class="navbar">
+              <!--logo-->
+              <div class="navbar__logo">
+                <img src="./images/logo.png" alt="" />
+                <p>Deliver</p>
+              </div>
+              <!--links-->
+              <ul class="navbar__links">
+                <li class="navbar__link"><a href="#banner">Home</a></li>
+                <li class="navbar__link"><a href="#contagion">Services</a></li>
+                <li class="navbar__link"><a href="#symptoms">Pricing</a></li>
+                <li class="navbar__link"><a href="#todo">FAQ</a></li>
+                <li class="navbar__link"><a href="#banner">Contact us</a></li>
+              </ul>
+              <!--icon-->
+              <div class="navbar__ham">
                 <div class="navbar__icon"></div>
               </div>
             </nav>
           </div>
         </header>
       </header>
-            </div>
-        </div>
-    </header>
-    <script src="./script.js"></script>
+      <!--Banner-->
+      <section id="banner">
+          <div class="continer">
+              <div class="banner__desc">
+                  <h1 class="banner__title">The <span>fastest<br>
+                    than light</span> delivery<br>
+                    other system to you<br> next customers</h1>
+                    <p class="banner__detail">It is easy to register your compani<br> and then we  will do all delivery<br> stuff for you  very fast.</p>
+                    <a href="#contact"
+                    ><button class="btn">register you company now</button></a>
+              </div>
+
+             <div class="img__bg">
+                 <div class="V_img">
+                 <img src="./images/V.png" alt="" class="V">
+                </div>
+                <div class="banner__img">
+                    <img src="./images/delivery-concept-portrait-happy-african-american-delivery-man-red-cloth-holding-box-package-isolated-grey-studio-background-copy-space-removebg-preview 1.png" alt="delivey aprican man">
+                </div>
+             </div>
+          </div>
+      </section>
+    <script src="./main.js"></script>
 </body>
 </html>

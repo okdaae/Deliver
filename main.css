@@ -1,4 +1,5 @@
 /* Global ============= */
+
 :root {
   --orange400: #FF8A4C;
   --orange600: #D03801;
@@ -11,6 +12,44 @@
   --smooth: all 0.3s ease-in;
   --shadow: 0px 7px 16px rgba(0, 0, 0, 0.15);
   --border-radious: 12px;
+  --pb:16px;
+  --
+}
+ /* reset-css */
+ html{
+  scroll-behavior: smooth;
+}
+a {
+text-decoration: none;
+color: inherit;
+}
+button,
+input,
+textarea {
+font-size: 16px;
+background-color: transparent;
+border: 0;
+}
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+outline: none;
+box-shadow: none;
+}
+ul,
+ol,
+li {
+list-style: none;
+padding-left: 0;
+margin: left 0;
+}
+p {
+font-size: 16px;
+line-height: 28px;
+letter-spacing: -0.01em;
 }
 /* Universal tags */
 *,
@@ -21,9 +60,6 @@
   box-sizing: border-box;
 }
 
-html{
-  scroll-behavior: smooth;
-}
 img{
   max-width: 100%;
   width: 100%;
@@ -46,6 +82,7 @@ button{
   color: #fff;
   background: linear-gradient(90deg, #FF4F4C 0%, #DF2320 100%);
   border-radius: 12px;
+  outline: none;
 
 /*=============Header*/
 
@@ -82,7 +119,7 @@ header {
   top: 10%;
   width: 90%;
   height: auto;
-  background-color: fff;
+  background-color: #FFFFFF;
   transform: translateY(-100%);
   opacity: 0;
   z-index: 5;
@@ -181,4 +218,39 @@ header {
   .navbar__ham{
       display: none;
   }
+}
+/*=================== Banenr*/
+
+.banner__desc{
+  display: flex;
+  flex-direction: column;
+  text-align: initial;
+  padding: 0 33px;
+}
+.banner__title{
+  padding-bottom: var(--pb);
+}
+.banner__title span{
+  color: var(--first-color);
+}
+.banner__detail{
+  padding-bottom:var(--pb);
+}
+.img__bg{
+  background: linear-gradient(90deg, #FF5A1F 0%, #FF3D3D 100%);
+  margin-top: 38.63px;
+  position: relative;
+  height: 100%;
+  padding: 14px 0;
+}
+.banner__img{
+  width: 100%;
+}
+.banner__img img{
+  width: 260px;
+}
+.V_img{
+  width: 170px;
+  position: absolute;
+  right: 0;
 }
