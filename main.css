@@ -13,7 +13,6 @@
   --shadow: 0px 7px 16px rgba(0, 0, 0, 0.15);
   --border-radious: 12px;
   --pb:16px;
-  --
 }
  /* reset-css */
  html{
@@ -225,7 +224,7 @@ header {
   display: flex;
   flex-direction: column;
   text-align: initial;
-  padding: 0 33px;
+  padding: 0 15px;
 }
 .banner__title{
   padding-bottom: var(--pb);
@@ -253,4 +252,38 @@ header {
   width: 170px;
   position: absolute;
   right: 0;
+}
+
+/* ===============Service */
+.service__desc{
+  margin: 48px 14.5px;
+}
+.section__title{
+  padding-bottom: 16px;
+}
+.service__contents{
+  text-align: center;
+  padding-top: 48px;
+}
+.service__content{
+  padding-bottom: 40px;
+}
+.service__content:nth-child(4){
+  padding-bottom: 0;
+}
+.service__circle{
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border:1px solid var(--first-color);
+  filter: drop-shadow(0px 2px 8px #FF5A1F);
+}
+.content__title{
+padding: 32px 0 20px 0;
+}
+.service__circle:hover{
+  border: 1px solid #FF4F4C;
+  box-shadow: 0px 2px 8px #FF5A1F;
+  transition: var(--smooth);
 }
