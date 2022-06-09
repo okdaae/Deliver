@@ -233,6 +233,7 @@ header {
 /*=================== Banenr*/
 #banner .container {
   background-image: linear-gradient(to bottom, var(--light-pink), #fff);
+  transition: var(--smooth);
 }
 .banner__desc{
   display: flex;
@@ -256,6 +257,7 @@ header {
   position: relative;
   height: 100%;
   padding: 14px 0;
+  transition: var(--smooth);
 }
 .banner__img{
   width: 100%;
@@ -275,6 +277,7 @@ header {
       height: 800px;
      display: flex;
      justify-content: space-between;
+     transition: var(--smooth);
     }
     .banner__desc{
       padding:0 0 0 240px;
@@ -303,6 +306,7 @@ header {
     background: linear-gradient(90deg, #FF5A1F 0%, #FF3D3D 100%);
     width: 50%;
     height: 100%;
+    transition: var(--smooth);
     }
     .V_img{
       position: absolute;
@@ -577,6 +581,9 @@ font-family: 'Archivo', sans-serif;
 .cont__icon__box:hover{
   border-radius: 4.78546px;
 }
+.box__group{
+  padding-bottom: 80px;
+}
 .textBox{
   background: #FFFFFF;
   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.25);
@@ -645,4 +652,48 @@ input:hover{
   font-size: 8px;
   font-family: "Inter", serif;
   }
+}
+
+/*===================Footer*/
+#footer .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer1{
+  background-color: #FF5A1F;
+}
+#footer .container{
+  background: #D03801;
+  padding: 10px 50px;
+}
+.footer__navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.footer__navbar li{
+  margin-right: 10px;
+}
+.footer__navbar li a{
+  color: #FFF8F1;
+  font-size: 20px;
+  font-weight: 700;
+}
+.footer__navbar li a:hover{
+  color: var(--title-color);
+}
+.logo__name{
+  color: #FDF2F2;
+  font-size: 23px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 13px;
+}
+.footer__detail{
+  color: #FFFFFF;
 }
