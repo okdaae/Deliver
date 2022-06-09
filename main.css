@@ -419,6 +419,11 @@ padding: 32px 0 20px 0;
 .work__circle img{
   width: 38px;
 }
+.work__img{
+  display: inline-block;
+  text-align: center;
+  width: 322px;
+}
 @media (min-width:62em) {
   .work__contents{
     display: flex;
@@ -504,4 +509,16 @@ padding: 32px 0 20px 0;
   }
   .home__btn{
     margin-top: 24px;
+  }
+
+  @media (min-width:62em) {
+    .parice__card{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }    
+    .price__title{
+      font-size: 36px;
+    }
   }
