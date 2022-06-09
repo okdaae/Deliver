@@ -75,6 +75,7 @@ img{
 }
 button{
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
   font-weight:bold;
   padding: 14px 24px;
   text-transform: uppercase;
@@ -82,10 +83,16 @@ button{
   background: linear-gradient(90deg, #FF4F4C 0%, #DF2320 100%);
   border-radius: 12px;
   outline: none;
-
+  border: none;
+}
+button:hover {
+  color: var(--title-color);
+  background-color: var(--light-pink);
+  transition: var(--smooth);
+}
 /*=============Header*/
 
-}
+
 header {
   background-color: var(--light-pink);
 }
@@ -217,7 +224,7 @@ header {
     color: #F6F4F4;
   }
   .navbar__link a:hover{
-      color: var(--first-color);
+      color: #000;
   }
   .navbar__ham{
       display: none;
@@ -411,4 +418,21 @@ padding: 32px 0 20px 0;
 }
 .work__circle img{
   width: 38px;
+}
+@media (min-width:62em) {
+  .work__contents{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+  .work__desc{
+    padding: 96px 0 64px 0;
+  }
+  .work__title{
+    font-size: 36px;
+  }
+  .work__detail{
+    font-size: 16px;
+  }
 }
