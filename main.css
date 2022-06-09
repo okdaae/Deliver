@@ -1,5 +1,5 @@
 /* Global ============= */
-
+/* 모바일 뷰 먼저*/
 :root {
   --orange400: #FF8A4C;
   --orange600: #D03801;
@@ -436,3 +436,72 @@ padding: 32px 0 20px 0;
     font-size: 16px;
   }
 }
+
+/* =======Price*/
+/*price-card*/
+#price .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  }
+  .parice__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .price__desc{
+    text-align: center;
+    padding-top: 66px;
+  }
+  .price__title{
+    padding-bottom: 20px;
+  }
+  .price__detail{
+    padding-bottom: 50px;
+  }
+  .card__maintitle{
+    font-size: 36px;
+    font-weight: 900;
+    color: #FF5A1F;
+
+  }
+  .price__title{
+    font-family: 'Archivo';
+    font-size: 24px;
+  }
+  .price__Card:hover{
+      transition: box-shadow 200ms ease-in-out;
+  }
+  .card{
+      border: 2px solid #FCD9BD;
+      border-radius: 18px;
+      padding: 32px;
+      margin-bottom: 53px;
+  }
+  .card:hover{
+      box-shadow: 0px 24px 40px rgba(255, 90, 31, 0.25);
+  }
+
+  .card__desc{
+  }
+  .card__maintitle{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+  .card__title__desc{
+    font-family: 'Inter';
+    font-size: 48px;
+    font-weight: 900;
+      background: linear-gradient(90deg, #FF4C4C 0%, #FF8A4C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 24px;
+  }
+  .home__btn{
+    margin-top: 24px;
+  }
